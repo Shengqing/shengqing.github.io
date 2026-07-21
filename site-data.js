@@ -26,6 +26,7 @@ window.siteData = {
 
   socials: [
     { label: "GitHub", url: "https://github.com/yourusername" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/yourusername" },
     { label: "Google Scholar", linkKey: "scholar" },
     { label: "ORCID", url: "https://orcid.org/0000-0000-0000-0000" },
   ],
