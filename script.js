@@ -108,7 +108,7 @@ renderTimeline("#education-list", data.education);
 const sidebarSocials = document.querySelector("#sidebar-socials");
 data.socials.forEach((social) => {
   const link = createElement("a", "", social.label);
-  link.href = social.url;
+  link.href = social.linkKey ? data.links[social.linkKey] : social.url;
   link.target = "_blank";
   link.rel = "noreferrer";
   sidebarSocials.append(link);
