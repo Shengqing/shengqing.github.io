@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Graduate student and researcher working across data, computation, and human-centered inquiry."
+    />
+    <meta name="theme-color" content="#090909" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Your Name | Graduate Researcher" />
+    <meta
+      property="og:description"
+      content="Research, publications, experience, and selected projects."
+    />
+    <title>Your Name | Graduate Researcher</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="site-data.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body class="route-research">
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <button class="sidebar-toggle" type="button" aria-expanded="false" aria-controls="sidebar">
+      <span class="sr-only">Toggle navigation</span>
+      <i></i><i></i><i></i>
+    </button>
+
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-inner">
+        <a class="sidebar-name" href="#/research" data-content="name">Your Name</a>
+        <p class="sidebar-role" data-content="role">Graduate student &amp; researcher</p>
+
+        <nav class="sidebar-nav" aria-label="Primary navigation">
+          <a href="#/research" data-route-link="research">Research</a>
+          <a href="#/about" data-route-link="about">About</a>
+        </nav>
+
+        <div class="sidebar-meta">
+          <p data-content="affiliation">Your Department / Your University</p>
+          <p data-content="location">Based in City, Country</p>
+        </div>
+
+        <div class="sidebar-links" id="sidebar-socials"></div>
+      </div>
+    </aside>
+
+    <main id="content">
+      <section class="view content-view" data-route="research" aria-labelledby="research-title">
+        <article class="document">
+          <header class="document-header">
+            <p class="document-kicker">Research</p>
+            <h1 id="research-title">Research</h1>
+            <p data-content="workIntro">
+              A selection of current and completed research, including collaborative and independent work.
+            </p>
+          </header>
+
+          <section class="document-section" aria-labelledby="questions-title">
+            <h2 id="questions-title">Main projects</h2>
+            <div class="topic-list" id="research-list"></div>
+          </section>
+
+          <section class="document-section" aria-labelledby="projects-title">
+            <h2 id="projects-title">Selected work</h2>
+            <div class="project-list" id="project-list"></div>
+          </section>
+
+          <section class="document-section" aria-labelledby="publications-title">
+            <div class="section-title-row">
+              <h2 id="publications-title">Publications</h2>
+              <a class="small-link" data-link="scholar" href="https://scholar.google.com/">Google Scholar &#8599;</a>
+            </div>
+            <ol class="publication-list" id="publication-list"></ol>
+          </section>
+        </article>
+      </section>
+
+      <section class="view content-view" data-route="about" hidden aria-labelledby="about-title">
+        <article class="document">
+          <header class="document-header">
+            <p class="document-kicker">About</p>
+            <h1 id="about-title">About</h1>
+            <div class="about-copy" id="about-copy"></div>
+          </header>
+
+          <section class="document-section" aria-labelledby="experience-title">
+            <h2 id="experience-title">Experience</h2>
+            <div class="timeline" id="experience-list"></div>
+          </section>
+
+          <section class="document-section" aria-labelledby="education-title">
+            <h2 id="education-title">Education</h2>
+            <div class="timeline" id="education-list"></div>
+          </section>
+
+          <section class="document-section contact-section" aria-labelledby="contact-title">
+            <h2 id="contact-title">Contact</h2>
+            <p data-content="contactCopy">
+              I'm always glad to hear about thoughtful research questions, collaborations, and teaching opportunities.
+            </p>
+            <a class="email-link" data-link="email" href="mailto:hello@example.com" data-content="email">hello@example.com</a>
+          </section>
+        </article>
+      </section>
+    </main>
+
+    <div class="sidebar-scrim" aria-hidden="true"></div>
+
+    <noscript>
+      <div class="noscript">This site needs JavaScript enabled to load its editable content.</div>
+    </noscript>
+  </body>
+</html>
