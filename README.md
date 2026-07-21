@@ -1,4 +1,4 @@
-# Personal research website
+# Personal research website Template
 
 A minimal black-and-white personal site for a graduate student or researcher. The research page is the default view, with a documentation-style sidebar and a separate About view. It is plain HTML, CSS, and JavaScript, so GitHub Pages can publish it without a build step.
 
@@ -23,7 +23,3 @@ python3 -m http.server 8000
 ```
 
 Then visit `http://localhost:8000`.
-
-## Publish
-
-Push the repository to the `main` branch of the `swu.github.io` GitHub repository. GitHub Pages will serve the site at `https://swu.github.io`.
